@@ -4,9 +4,9 @@ WORKDIR /usr/src/app
 
 # RUN apk add --update nodejs npm
 
-COPY ./backend-api/package.json .
+#COPY ./package.json .
 
-#COPY ./backend-api .
+COPY ./backend .
 
 CMD yarn && yarn run watch
 
